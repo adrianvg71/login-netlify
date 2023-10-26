@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
+const path = require('path');
 
 const app = express();
 const router = express.Router();
@@ -9,12 +10,12 @@ const router = express.Router();
 app.use(cors());
 
 // Ruta para el registro de usuarios
-router.post('/', (req, res) => {
+router.post('/registro', (req, res) => {
   const { correo, nombre, contraseña } = req.body;
 
   try {
     // Leer el archivo JSON existente
-    const data = fs.readFileSync('./public/data/users.json', 'utf8');
+    const data = fs.readFileSync(path.join(__dirname, 'public', 'data', 'users.json'), 'utf8');
     const users = JSON.parse(data);
 
     // Verificar si el correo ya existe en la matriz de usuarios
@@ -25,8 +26,8 @@ router.post('/', (req, res) => {
       // Agregar el nuevo usuario a la matriz de usuarios
       users.users.push({ correo, nombre, contraseña });
 
-      // Guardar la matriz actualizada en el archivo JSON (usa la misma ruta)
-      fs.writeFileSync('./public/data/users.json', JSON.stringify(users, null, 2), 'utf8');
+      // Guardar la matriz actualizada en el archivo JSON
+      fs.writeFileSync(path.join(__dirname, 'public', 'data', 'users.json'), JSON.stringify(users, null, 2), 'utf8');
 
       res.status(200).json({ message: 'Usuario registrado con éxito' });
     }
@@ -36,6 +37,13 @@ router.post('/', (req, res) => {
   }
 });
 
-module.exports = {
-  handler: app
-};
+// Agregar la ruta '/registro' al enrutador principal
+app.use('/registro', router);
+
+// Iniciar el servidor
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Servidor en ejecución en http://localhost:${port}`);
+});
+
+module.exports = app;

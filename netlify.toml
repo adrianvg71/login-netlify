@@ -9,4 +9,4 @@ publish = "client/public"
 
 [[functions]]
 name = "registro"
-path = "registro.js"
+path = "functions/registro.js"

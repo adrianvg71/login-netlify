@@ -7,6 +7,3 @@ publish = "client/public"
   to = "/.netlify/functions/registro"
   status = 200
 
-[[functions]]
-name = "registro"
-path = "functions/registro.js"

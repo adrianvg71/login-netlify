@@ -1,3 +1,9 @@
 [build]
+base = "servidor"  
 functions = "server"
 publish = "client/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/servidor/:splat"
+  status = 200

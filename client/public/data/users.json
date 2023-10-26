@@ -54,6 +54,11 @@
       "correo": "jcamin@gmail.com",
       "nombre": "jcamin",
       "contraseña": "jcamin"
+    },
+    {
+      "correo": "test2@test.com",
+      "nombre": "test2",
+      "contraseña": "test2"
     }
   ]
 }

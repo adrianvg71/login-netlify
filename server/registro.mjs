@@ -10,8 +10,10 @@ app.use(express.json());
 app.use(express.static('../client/public'));
 //app.use('/data', express.static('data'));
 
-// Configura CORS para permitir solicitudes desde cualquier origen
-app.use(cors());
+// Configura CORS para permitir solicitudes desde el dominio de Netlify
+app.use(cors({
+  origin: 'https://registro-inicio.netlify.app', // Reemplaza con tu dominio de Netlify
+}));
 
 // Reemplaza 'dist' con la carpeta correcta en la que se generan los archivos de construcción.
 app.use(express.static('dist'));

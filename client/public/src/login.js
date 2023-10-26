@@ -57,7 +57,7 @@ document.querySelector(".signUp").addEventListener("click", async () => {
     }
     
     try {
-      const response = await fetch('https://registro-inicio.netlify.app/registro', {
+      const response = await fetch('https://localhost/registro', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

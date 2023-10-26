@@ -3,6 +3,6 @@ functions = "server"
 publish = "client/public"
 
 [[redirects]]
-  from = "/*"
-  to = "/servidor/:splat"
+  from = "/registro"
+  to = "/servidor/registro"
   status = 200

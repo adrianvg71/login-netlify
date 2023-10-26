@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "correo": "test@test.com",
+      "nombre": "test",
+      "contraseña": "prueba"
+    },
+    {
+      "correo": "paco@paco.com",
+      "nombre": "paco",
+      "contraseña": "paco"
+    },
+    {
+      "correo": "manolin@gmail.com",
+      "nombre": "manolin",
+      "contraseña": "manolo"
+    },
+    {
+      "correo": "julito@gmail.com",
+      "nombre": "julito",
+      "contraseña": "julito"
+    },
+    {
+      "correo": "llara@gmail.com",
+      "nombre": "llara",
+      "contraseña": "llara"
+    },
+    {
+      "correo": "pedrito@gmail.com",
+      "nombre": "pedrito",
+      "contraseña": "pedrito"
+    },
+    {
+      "correo": "llaragarcia20@gmail.com",
+      "nombre": "sisuka",
+      "contraseña": "uwu"
+    },
+    {
+      "correo": "pacooo",
+      "nombre": "paco",
+      "contraseña": "paco"
+    },
+    {
+      "correo": "joselito@gmail.com",
+      "nombre": "joselo",
+      "contraseña": "joselo"
+    },
+    {
+      "correo": "joselito2@gmail.com",
+      "nombre": "joselito2",
+      "contraseña": "joselito2"
+    },
+    {
+      "correo": "jcamin@gmail.com",
+      "nombre": "jcamin",
+      "contraseña": "jcamin"
+    }
+  ]
+}

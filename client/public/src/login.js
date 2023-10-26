@@ -14,7 +14,7 @@ loginBtn.addEventListener("click", () => {
 // Cargamos los usuarios del JSON
 let users = [];
 async function cargarUsuarios() {
-  const response = await fetch('./data/users.json');
+  const response = await fetch('../client/public/data/users.json');
   const data = await response.json();
   data.users.forEach(usuario => {
     users.push(usuario)

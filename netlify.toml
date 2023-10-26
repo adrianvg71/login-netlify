@@ -4,5 +4,5 @@ publish = "client/public"
 
 [[redirects]]
   from = "/registro"
-  to = "/servidor/registro"
+  to = "/.netlify/functions/registro"
   status = 200

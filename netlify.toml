@@ -1,6 +1,6 @@
 [build]
-functions = "server"
-publish = "client/public"
+  functions = "server"
+  publish = "client/public"
 
 [[redirects]]
   from = "/registro"

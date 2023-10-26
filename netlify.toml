@@ -6,3 +6,7 @@ publish = "client/public"
   from = "/registro"
   to = "/.netlify/functions/registro"
   status = 200
+
+[[functions]]
+name = "registro"
+path = "registro.js"

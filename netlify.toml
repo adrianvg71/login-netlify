@@ -1,9 +1,3 @@
 [build]
 functions = "server"
 publish = "client/public"
-
-[[redirects]]
-  from = "/registro"
-  to = "/.netlify/functions/registro"
-  status = 200
-

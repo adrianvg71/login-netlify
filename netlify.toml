@@ -3,6 +3,6 @@ functions = "server"
 publish = "client/public"
 
 [[redirects]]
-  from = "/*"
-  to = "/.netlify/functions/server/:splat"
+  from = "/registro"
+  to = "/.netlify/functions/registro"
   status = 200
